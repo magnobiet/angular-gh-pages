@@ -8,11 +8,11 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "predeploy": "npm run build -- --prod --base-href $npm_package_homepage",
+    "predeploy": "npm run build -- --prod --base-href $npm_package_homepage && cp CNAME dist/$npm_package_name",
     "deploy": "npx gh-pages -d dist/$npm_package_name"
   },
   "private": true,
-  "homepage": "https://magnobiet.com/angular-gh-pages/",
+  "homepage": "https://angular-app.magnobiet.com/",
   "dependencies": {
     "@angular/animations": "~8.2.4",
     "@angular/common": "~8.2.4",
